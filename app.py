@@ -5,7 +5,7 @@ import pickle
 st.title('Netflix Recommender System')
 
 # Load the movie list from the pickle file
-movie_list = pickle.load(open('movie_list', 'rb'))
+movie_list = pickle.load(open('movie_list.pkl', 'rb'))
 
 # Extract movie names from the dataframe
 movie_list = movie_list['Movie Name'].values
